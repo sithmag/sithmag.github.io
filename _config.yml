@@ -1,13 +1,12 @@
 # --------------------------------------------------
 #  BASIC SITE INFO
 # --------------------------------------------------
-title: Hanlin Cai   # Main site title (appears in browser tab & RSS)
-tagline: Here is personal website of Hanlin Cai. Powered by Jekyll, based on the Minimal Mistakes theme.  # Optional short tagline, used by some layouts
-description: Here is personal website of Hanlin Cai, PhD Student at the University of Cambridge.  # Strongly recommended for SEO & social cards
-
+title: Sithma Gunawardena  # Main site title (appears in browser tab & RSS)
+tagline: Here is personal website of Sithma Gunawardena. Powered by Jekyll.  # Optional short tagline, used by some layouts
+description: Here is personal website of Sithma Gunawardena, Undergraduate Student at the University of Sydney.  # Strongly recommended for SEO & social cards
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
-url: https://caihanlin.com
+url: https://sithmagunawardena.github.io
 
 # --------------------------------------------------
 #  AUTHOR / PROFILE DATA
@@ -15,7 +14,7 @@ url: https://caihanlin.com
 owner:
   name: Sithma Gunawardena
   avatar: sithmagunawardena.jpg
-  # bio: Dream big, stay positive, work hard, and enjoy the journey.
+  #bio: Dream big, stay positive, work hard, and enjoy the journey.
   email: sithma100@gmail.com
   # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
 
@@ -41,25 +40,19 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 # --------------------------------------------------
 links:
   - title: About Me
-    url: /
-  - title: Publications
-    url: /publications/
-  - title: Services
-    url: /services/
-  - title: Awards
-    url: /awards/
+    url: /aboutme/
+  - title: Projects
+    url: /projects/
+  - title: Work Experience
+    url: /work-experience/
   - title: Hobbies
     url: /hobbies/
-  - title: Blogs
-    url: /blogs/
-  - title: 中文
-    url: /cn/
 
 
 # --------------------------------------------------
 #  BUILD & RENDERING OPTIONS
 # --------------------------------------------------
-timezone: Asia/Shanghai          # IANA time-zone ID (China/Beijing is invalid)
+timezone: Australia         # IANA time-zone ID (China/Beijing is invalid)
 future: true                     # Render posts dated in the future
 highlighter: rouge               # Code highlighter; Rouge is default in MM
 # markdown: kramdown             # Jekyll default; uncomment to force
