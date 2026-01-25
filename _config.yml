@@ -6,7 +6,7 @@ tagline: Here is personal website of Sithma Gunawardena. Powered by Jekyll.  # O
 description: Here is personal website of Sithma Gunawardena, Undergraduate Student at the University of Sydney.  # Strongly recommended for SEO & social cards
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
-url: https://sithmagunawardena.github.io
+url: https://sithmag.github.io
 
 # --------------------------------------------------
 #  AUTHOR / PROFILE DATA
