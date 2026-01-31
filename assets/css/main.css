@@ -389,16 +389,178 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .mfp-fade.mfp-removing.mfp-bg{opacity:0;}
 @media print{*{background:transparent !important;color:black !important;box-shadow:none !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important;position:static !important;} @page {margin:0.5cm;}h2,h3{orphans:3;widows:3;page-break-after:avoid;} p{orphans:3;widows:3;} pre,blockquote{border:1px solid #333;page-break-inside:avoid;padding:1em;} abbr[title]:after{content:" (" attr(title) ")";} a,a:visited{text-decoration:underline;} a[href]:after{content:" (" attr(href) ")";} a[href^="javascript:"]:after,a[href^="#"]:after{content:"";} img{max-width:100% !important;page-break-inside:avoid;} thead{display:table-header-group;} tr{page-break-inside:avoid;}}@media only screen and (min-width:30em){.image-grid li{width:33.333333%;}}@media only screen and (min-width:37.5em){html{font-size:95%;} .site-name{display:inline;float:left;width:16.666666666666668%;margin-left:4.166666666666667%;margin-right:4.166666666666667%;} .top-navigation{display:inline;float:left;width:75%;margin-left:0%;margin-right:0%;} .image-wrap .headline-wrap,.image-wrap:after{left:25%;} .image-wrap .headline-wrap{margin-left:0;} #main article{display:inline;float:left;width:50%;margin-left:0%;margin-right:0%;} #index{display:inline;float:left;width:50%;margin-left:0%;margin-right:0%;} .footer-wrap footer{display:inline;float:left;width:50%;margin-left:25%;margin-right:25%;} .article-author-top{display:block;display:inline;float:left;width:16.666666666666668%;margin-left:4.166666666666667%;margin-right:4.166666666666667%;} .article-author-bottom{display:none;} .toc{display:block;display:inline;float:left;width:16.666666666666668%;margin-left:4.166666666666667%;margin-right:4.166666666666667%;position:fixed;top:120px;right:0;-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);-moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5);box-shadow:0 0 5px rgba(0, 0, 0, 0.5);} .image-grid li{width:25%;} .related-articles{display:inline;float:left;width:50%;margin-left:25%;margin-right:25%;}}@media only screen and (min-width:48em){html{font-size:100%;} .image-grid li{width:20%;}}@media only screen and (min-width:62em){html{font-size:112.5%;} .image-grid li{width:16.666666666%;}}@media only screen and (min-width:86.375em){.site-name{display:inline;float:left;width:12.5%;margin-left:16.666666666666668%;} .top-navigation{display:inline;float:left;width:66.66666666666667%;} .image-wrap:after{left:33.333333333%;} .image-wrap .headline-wrap{margin-left:8.333333333333334%;} #main article{display:inline;float:left;width:37.5%;} #index{display:inline;float:left;width:37.5%;} .related-articles{display:inline;float:left;width:37.5%;margin-left:33.333333333333336%;margin-right:29.166666666666668%;} .footer-wrap footer{display:inline;float:left;width:37.5%;margin-left:33.333333333333336%;margin-right:29.166666666666668%;} .article-author-top{display:inline;float:left;width:12.5%;margin-left:16.666666666666668%;}}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){}
 
-.image-gallery {
+/* =========================================================
+   Open Props-style Horizontal Media Scroller (Jekyll-safe)
+   ========================================================= */
+
+/* If you WANT the Open Props imports, keep them.
+   If your theme blocks remote @import, remove these two lines. */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.media-scroller{
+  --_spacer: 12px;                 /* fallback if open-props vars don't load */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin: 1.5em 0;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+
+  /* Use a fixed card width so it always scrolls */
+  grid-auto-columns: 260px;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+  margin: 0.75rem 0 0.5rem;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
 }
 
-.image-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+/* Each card */
+.media-element{
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: var(--_spacer);
+
+  padding: var(--_spacer);
+
+  /* fallbacks if open-props isn't available */
+  background: #f3f3f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+
+  scroll-snap-align: start;
+
+  /* Prevent theme rules from forcing full-width blocks oddly */
+  min-width: 0;
 }
+
+.media-element > img{
+  inline-size: 100%;
+  height: 170px;               /* ensures consistent height */
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Optional caption styling */
+.media-element .title{
+  margin: 0;
+  text-indent: 0;              /* your theme indents p+p */
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.gallery-caption{
+  margin: 0 0 1.5rem;
+  text-indent: 0;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+/* Optional: smoother scrolling on trackpads */
+.media-scroller{
+  scroll-behavior: smooth;
+}
+
+<style>
+/* ===== Horizontal Media Scroller (works with Minimal Mistakes & most themes) ===== */
+.page__content .media-scroller,
+#main .media-scroller,
+.media-scroller{
+  --gap: 12px;
+  display: grid !important;
+  gap: var(--gap) !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(220px, 1fr) !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 10px 4px 14px !important;
+  margin: 0.75rem 0 0.25rem !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-x: contain !important;
+  scroll-snap-type: x mandatory !important;
+}
+
+.page__content .media-element,
+#main .media-element,
+.media-element{
+  scroll-snap-align: start !important;
+  display: grid !important;
+  gap: 8px !important;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  background: rgba(0,0,0,0.04) !important;
+  min-width: 220px !important;
+}
+
+.page__content .media-element img,
+#main .media-element img,
+.media-element img{
+  width: 100% !important;
+  height: 170px !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+}
+
+/* Minimal Mistakes / many themes style p+p with text-indent; cancel it here */
+.page__content .media-element p,
+#main .media-element p,
+.media-element p{
+  margin: 0 !important;
+  text-indent: 0 !important;
+}
+
+.page__content .media-element .title,
+#main .media-element .title,
+.media-element .title{
+  font-size: 0.95rem !important;
+  opacity: 0.85 !important;
+}
+
+/* Optional caption */
+.page__content .gallery-caption,
+#main .gallery-caption,
+.gallery-caption{
+  margin: 0 0 1.25rem !important;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* ===== Your existing auto galleries (.scroll-gallery) ===== */
+.page__content .scroll-gallery,
+#main .scroll-gallery,
+.scroll-gallery{
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 12px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 10px 4px 14px !important;
+  -webkit-overflow-scrolling: touch !important;
+  scroll-snap-type: x mandatory !important;
+}
+
+.page__content .scroll-gallery a,
+#main .scroll-gallery a,
+.scroll-gallery a{
+  flex: 0 0 auto !important;
+  scroll-snap-align: start !important;
+}
+
+.page__content .scroll-gallery img,
+#main .scroll-gallery img,
+.scroll-gallery img{
+  width: 260px !important;
+  height: 170px !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+  max-width: none !important;
+}
+</style>

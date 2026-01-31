@@ -21,7 +21,6 @@ Below is a selection of projects across **electrochemical diagnostics**, **assis
 <br />
 - [Machine Learning Model for Heart Attack Risk Prediction](#heart-attack-ml)
 
-
 ---
 
 ## <a id="mpo-ibd"></a>Electrochemical Biosensing of Myeloperoxidase (MPO) for Inflammatory Bowel Disease Diagnostics  
