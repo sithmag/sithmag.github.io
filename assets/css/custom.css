@@ -1,3 +1,5 @@
+body { outline: 5px solid red !important; }
+
 /* ---------- Hobbies: Horizontal Media Scroller ---------- */
 
 .page__content .media-scroller {
