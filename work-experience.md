@@ -61,3 +61,13 @@ Worked in a consulting-style engineering team delivering client outcomes for the
 - Assisted with admin tasks for the Residential Assistant team and ongoing reporting  
 - Provided mentoring and guidance to residents for university adjustment and success  
 - Demonstrated leadership, accountability, and calm decision-making under pressure  
+
+---
+
+## Hospital & Clinical Exposure
+
+A formative part of why I chose biomedical engineering came from early hospital exposure in both **Sri Lanka** and **Australia**, including supervised observational placements in oncology and broader hospital workflows.
+<br><br>
+→ **Full details + certificates:** [Clinical & Hospital Exposure](/clinical-exposure/)
+
+---
