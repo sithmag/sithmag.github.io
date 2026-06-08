@@ -7,39 +7,54 @@ title: About Me
 # About Me
 
 <img src="/images/sithmafloat.jpg" class="floatpic">
-<br />
 Hi I'm **Sithma Gunawardena!** <br>
 
 <br />
-I am a final-year Biomedical Engineering (Honours) student at the University of Sydney, specialising in nanoscale biotechnology, with an expected graduation in July 2026. My work sits at the intersection of biomaterials, medical device design, electrochemical diagnostics, and biomedical instrumentation, with a strong focus on translating engineering concepts into practical, patient-centred solutions. I also have a strong interest in the electrical and electronics components of biomedical engineering, particularly sensors, circuits, signal processing, embedded systems, and how hardware decisions shape real clinical performance.
+I am a biomedical engineer who studied **Biomedical Engineering (Honours)** at the **University of Sydney**, specialising in **nanoscale biotechnology**. My interests sit across **medical device development**, **biomedical instrumentation**, **assistive technology**, **embedded systems**, **diagnostics**, and **hands-on engineering prototyping**. I am especially interested in work that turns engineering concepts into reliable, testable, and patient-centred solutions for real clinical and industry environments.
 
 <br />
-Over the course of my studies, I have led and contributed to multiple multidisciplinary projects across assistive technology, diagnostics, and health-tech innovation. This includes leading a customised seating solution project for individuals with Cerebral Palsy in collaboration with Jacaranda Flame Consulting and the Cerebral Palsy Alliance (CPA) covering biomaterials research (foam, hydrogels, lattice-oriented TPU), CAD-driven geometry design, prototyping for real-world testing, and delivery of a comprehensive design report spanning manufacturing/outsourcing, cost/timing, sustainability, and rated risk analysis. I have also led the design and prototyping of a custom-fit lower-limb orthotic for an individual with SATB2, applying human-centred design, iterative testing, and detailed engineering documentation.
+My experience is strongly hands-on. As a **Workshop Assistant at the Cerebral Palsy Alliance**, I support wheelchair setup, custom fittings, equipment modification, and assistive technology preparation for clients with individual mobility needs. This role has given me direct exposure to practical engineering in a healthcare setting, including fabrication, adjustment, troubleshooting, and the real-world constraints that shape how assistive devices are designed, built, tested, and used. I have also developed experience with workshop tools and processes including lathes, band saws, drills, grinders, sanders, sheet-metal folders, press brakes, and welding equipment.
 
 <br />
-In parallel, I have built strong experience in biomedical instrumentation and data-driven health applications, including the development of a PPG-based pulse oximeter (ranked top in the system demonstration) using Arduino and Python-based signal processing and GUI visualisation, and a machine learning model for heart attack risk prediction using feature engineering and performance evaluation across standard classification metrics. My honours research further extends into electrochemical biosensing, with a focus on myeloperoxidase (MPO) and clinically relevant assay translation.
+I also have laboratory and analytical experience as a **Laboratory Assistant at the University of Canberra**, where I support environmental and analytical chemistry research involving sample preparation, contamination control, digestion workflows, recovery standards, and multi-element ICP-MS analysis. While my main career focus is practical engineering and industry-based product development, this experience has strengthened my attention to detail, documentation discipline, quality-control mindset, and ability to follow controlled technical procedures.
 
 <br />
-I am also a confident public speaker, with experience presenting complex biomedical topics to academic and mixed technical audiences, including:
-- Decoding the Influence of Force on Stem Cell Differentiation
-- MPO Catalysis: Electrochemical Insights into Pseudohalogenation vs. Catalase-like Activity
-- Injectable Microbead-Encapsulated PCL/Collagen Hydrogel + LIPUS to Treat Knee Osteoarthritis
+Across my engineering projects, I have led and contributed to multidisciplinary work in **assistive technology**, **diagnostics**, **biomedical instrumentation**, **embedded systems**, and **health-tech innovation**. This included leading a customised seating solution project for individuals with Cerebral Palsy in collaboration with Jacaranda Flame Consulting and the Cerebral Palsy Alliance, covering biomaterials research, CAD-driven geometry design, 3D-printed prototyping, manufacturing considerations, sustainability, and rated risk analysis. I also worked on a custom-fit lower-limb orthotic for an individual with SATB2, applying human-centred design, iterative testing, and detailed engineering documentation.
+
+<br />
+I have built experience across both the practical and technical sides of biomedical engineering. My projects include developing a **PPG-based pulse oximeter** using Arduino, Python-based signal processing, and GUI visualisation, as well as a **machine learning model for heart attack risk prediction** using feature engineering and classification performance evaluation. My honours research extended this interest into **electrochemical biosensing**, focusing on myeloperoxidase (MPO) detection and the translation of clinically relevant assays toward practical diagnostic platforms.
+
+<br />
+Beyond biomedical engineering, I have a strong interest in the **electrical and electronics side of health technology**, particularly sensors, circuits, signal processing, embedded systems, troubleshooting, and how hardware decisions influence real clinical performance. I enjoy working across the full engineering pathway from concept development and prototyping through to testing, documentation, iteration, and user-focused refinement.
+
+<br />
+I am also a confident communicator and presenter, with experience explaining complex biomedical topics to academic, technical, and mixed audiences, including:
+
+* Decoding the Influence of Force on Stem Cell Differentiation
+* MPO Catalysis: Electrochemical Insights into Pseudohalogenation vs. Catalase-like Activity
+* Injectable Microbead-Encapsulated PCL/Collagen Hydrogel + LIPUS to Treat Knee Osteoarthritis
 
 **Check out my projects for a full list of my work!**
 
 <br />
-I’m always open to academic discussions, industry collaboration, and opportunities in biomedical engineering, diagnostics, instrumentation, and health technology.
+I’m always open to academic discussions, industry collaboration, and opportunities in biomedical engineering, medical devices, diagnostics, instrumentation, prototyping, assistive technology, automation, and health technology.
 
 ---
+
 ## Areas of Interest for Graduate Opportunities
-I’m currently seeking an entry-level / graduate role. If any of the areas below align with your team’s work, I’d welcome the opportunity to connect.
-- Biomedical instrumentation & sensors (data acquisition, calibration, troubleshooting)
-- Hardware-focused medical device development (circuits, sensor integration, hands-on prototyping, debugging)
-- Embedded systems prototyping (Arduino/MCU basics, interfacing, testing)
-- Signal processing & data analysis (Python/MATLAB, feature extraction, validation)
-- Design & prototyping workflow (CAD, iterative testing, documentation)
-- Verification & validation (V&V) support (test plans, repeatability, reporting, basic stats)
-- Quality, compliance & risk mindset (WHS, design controls, risk analysis, traceable reporting)
-- Cross-functional collaboration & stakeholder communication (client-facing updates, clear technical write-ups)
 
----
+I am currently seeking an entry-level or graduate role where I can contribute to practical engineering, product development, testing, and technical problem-solving. If any of the areas below align with your team’s work, I’d welcome the opportunity to connect.
+
+* **Medical device development** — concept development, prototyping, testing, iteration, and documentation
+* **Biomedical instrumentation & sensors** — data acquisition, calibration, troubleshooting, sensor integration, and measurement reliability
+* **Hardware-focused engineering** — circuits, embedded systems, signal pathways, hardware debugging, and system-level thinking
+* **Assistive technology & rehabilitation engineering** — wheelchair systems, custom fittings, mobility equipment, user-centred design, and practical device modification
+* **Prototyping & manufacturing support** — CAD, 3D printing, fabrication, workshop tools, design-for-manufacture thinking, and hands-on build support
+* **Test engineering & verification support** — test plans, repeatability, validation protocols, performance checks, basic statistics, and structured reporting
+* **Automation & instrumentation systems** — sensors, data logging, basic control systems, Arduino/MCU prototyping, Raspberry Pi, and hardware-software integration
+* **Embedded systems prototyping** — Arduino, microcontroller basics, interfacing, signal capture, debugging, and simple GUI/data visualisation workflows
+* **Signal processing & data analysis** — Python, MATLAB, feature extraction, filtering, performance evaluation, and experimental data interpretation
+* **Electrochemical diagnostics & biosensing** — assay translation, electrochemical testing, differential pulse voltammetry, cyclic voltammetry, and diagnostic device concepts
+* **Quality, risk & compliance mindset** — WHS, design controls, traceable documentation, risk analysis, quality procedures, and controlled technical workflows
+* **Cross-functional collaboration** — working with engineers, clinicians, researchers, clients, supervisors, and non-technical stakeholders
+* **Technical communication** — design reports, progress updates, presentations, risk documentation, and clear engineering explanations

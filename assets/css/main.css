@@ -467,3 +467,443 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
   scroll-behavior: smooth;
 }
 
+
+
+
+/* ---------- Work Experience Logos ---------- */
+
+.experience-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 1.8rem 0;
+}
+
+.experience-logo {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Less padding = logo appears bigger */
+/* More padding = logo appears smaller */
+
+.logo-cpa {
+  padding: 22px !important;
+}
+
+.logo-uc {
+  padding: 8px !important;
+}
+
+.logo-jfc {
+  padding: 8px !important;
+}
+
+.logo-aldi {
+  padding: 1px !important;
+}
+
+.logo-officeworks {
+  padding: 8px !important;
+}
+
+.logo-unilodge {
+  padding: 10px !important;
+}
+
+.experience-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+}
+
+.experience-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+
+.experience-card ul {
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 650px) {
+  .experience-card {
+    flex-direction: column;
+  }
+
+  .experience-logo {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .logo-cpa {
+    padding: 12px !important;
+  }
+
+  .logo-uc {
+    padding: 7px !important;
+  }
+
+  .logo-jfc {
+    padding: 7px !important;
+  }
+
+  .logo-aldi {
+    padding: 7px !important;
+  }
+
+  .logo-officeworks {
+    padding: 7px !important;
+  }
+
+  .logo-unilodge {
+    padding: 8px !important;
+  }
+}
+
+/* =========================================================
+   Wide Projects Page Override
+   ========================================================= */
+
+body.projects-wide .article-author-top {
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+}
+
+body.projects-wide #main {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+body.projects-wide #main article {
+  float: none !important;
+  display: block !important;
+  width: min(1500px, calc(100vw - 6rem)) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body.projects-wide .article-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+/* =========================================================
+   Project Page Cards
+   ========================================================= */
+
+body.projects-wide .project-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.85fr) minmax(480px, 1.15fr) !important;
+  gap: 3rem !important;
+  align-items: start !important;
+  width: 100% !important;
+  margin: 4rem 0 !important;
+  padding-bottom: 4rem !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+body.projects-wide .project-info {
+  min-width: 0 !important;
+}
+
+body.projects-wide .project-info h2 {
+  margin-top: 0 !important;
+}
+
+body.projects-wide .project-info h3,
+body.projects-wide .project-media h3 {
+  margin-bottom: 0.45rem !important;
+}
+
+body.projects-wide .project-info p,
+body.projects-wide .project-media p {
+  text-indent: 0 !important;
+}
+
+body.projects-wide .project-info ul {
+  padding-left: 1.2rem !important;
+}
+
+body.projects-wide .project-media {
+  position: sticky !important;
+  top: 1.5rem !important;
+  min-width: 0 !important;
+}
+
+body.projects-wide .project-media > iframe {
+  width: 100% !important;
+  height: 720px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 10px !important;
+  background: #f7f7f7 !important;
+  margin-top: 0.6rem !important;
+}
+
+body.projects-wide .media-instruction {
+  margin: -0.25rem 0 1rem 0 !important;
+  text-indent: 0 !important;
+  font-size: 0.95rem !important;
+  opacity: 0.75 !important;
+}
+
+/* =========================================================
+   Clickable Image Card
+   ========================================================= */
+
+body.projects-wide .featured-media {
+  margin-bottom: 1.25rem !important;
+}
+
+body.projects-wide .image-link-card {
+  position: relative !important;
+  display: block !important;
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: #f7f7f7 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease !important;
+}
+
+body.projects-wide .image-link-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14) !important;
+  border-color: #222 !important;
+}
+
+body.projects-wide .project-image {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 620px !important;
+  object-fit: contain !important;
+  display: block !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #f7f7f7 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body.projects-wide .image-overlay {
+  position: absolute !important;
+  right: 0.75rem !important;
+  bottom: 0.75rem !important;
+  padding: 0.45rem 0.65rem !important;
+  border-radius: 999px !important;
+  background: rgba(0, 0, 0, 0.78) !important;
+  color: #fff !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* =========================================================
+   Clickable Details / Tabs
+   ========================================================= */
+
+body.projects-wide .media-toggle,
+body.projects-wide .code-details {
+  margin-bottom: 1rem !important;
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 10px !important;
+  background: #fafafa !important;
+  overflow: hidden !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+body.projects-wide .media-toggle:hover,
+body.projects-wide .code-details:hover {
+  border-color: #222 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.projects-wide .media-toggle summary,
+body.projects-wide .code-details summary {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  cursor: pointer !important;
+  padding: 0.85rem 1rem !important;
+  list-style: none !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  background: #f2f2f2 !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+body.projects-wide .media-toggle summary::-webkit-details-marker,
+body.projects-wide .code-details summary::-webkit-details-marker {
+  display: none !important;
+}
+
+body.projects-wide .media-toggle summary::after,
+body.projects-wide .code-details summary::after {
+  content: "Open +" !important;
+  flex-shrink: 0 !important;
+  padding: 0.25rem 0.55rem !important;
+  border: 1px solid #222 !important;
+  border-radius: 999px !important;
+  font-size: 0.85rem !important;
+  line-height: 1 !important;
+}
+
+body.projects-wide .media-toggle[open] summary::after,
+body.projects-wide .code-details[open] summary::after {
+  content: "Close −" !important;
+}
+
+body.projects-wide .media-toggle[open] summary,
+body.projects-wide .code-details[open] summary {
+  border-bottom-color: #d8d8d8 !important;
+}
+
+body.projects-wide .media-toggle summary small,
+body.projects-wide .code-details summary small {
+  display: block !important;
+  font-family: 'PT Serif', serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  opacity: 0.7 !important;
+}
+
+body.projects-wide .media-toggle iframe {
+  width: 100% !important;
+  height: 720px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #f7f7f7 !important;
+  margin-top: 0 !important;
+}
+
+body.projects-wide .media-toggle .project-button {
+  margin: 0.9rem 1rem 1rem 1rem !important;
+}
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+body.projects-wide .project-button {
+  display: inline-block !important;
+  padding: 0.55rem 0.85rem !important;
+  border: 1px solid #222 !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  background: #fff !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+}
+
+body.projects-wide .project-button:hover {
+  background: #222 !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* =========================================================
+   Code Snippet Styling
+   ========================================================= */
+
+body.projects-wide .code-details {
+  margin-top: 1.25rem !important;
+}
+
+body.projects-wide .code-details .highlight {
+  max-height: 520px !important;
+  overflow: auto !important;
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+body.projects-wide .code-details pre {
+  margin: 0 !important;
+}
+
+/* =========================================================
+   Mobile Layout
+   ========================================================= */
+
+@media only screen and (max-width: 900px) {
+  body.projects-wide #main article {
+    width: calc(100vw - 2rem) !important;
+  }
+
+  body.projects-wide .project-card {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  body.projects-wide .project-media {
+    position: static !important;
+  }
+
+  body.projects-wide .project-media > iframe,
+  body.projects-wide .media-toggle iframe {
+    height: 520px !important;
+  }
+
+  body.projects-wide .project-image {
+    max-height: none !important;
+  }
+
+  body.projects-wide .image-overlay {
+    position: static !important;
+    display: block !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+  }
+}
+
+/* ---------- Centered Projects Jump List ---------- */
+
+body.projects-wide .jump-section {
+  text-align: center !important;
+  max-width: 900px !important;
+  margin: 2rem auto 3rem auto !important;
+}
+
+body.projects-wide .jump-section strong {
+  display: block !important;
+  margin-bottom: 1rem !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 1.35rem !important;
+}
+
+body.projects-wide .jump-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 auto !important;
+}
+
+body.projects-wide .jump-list li {
+  list-style-type: none !important;
+  margin: 0.65rem 0 !important;
+}
+
+body.projects-wide .jump-list a {
+  display: inline-block !important;
+  padding: 0.35rem 0.6rem !important;
+  border-bottom: 1px dotted #b3b3b1 !important;
+  text-decoration: none !important;
+}
+
+body.projects-wide .jump-list a:hover {
+  border-bottom: 1px solid #333 !important;
+}

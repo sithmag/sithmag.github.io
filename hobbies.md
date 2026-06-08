@@ -27,6 +27,8 @@ I've also taken up leadership roles to help organise events and activities for m
   <div class="media-element"><a href="/images/hobbies/Friends%20and%20Society/IMG_9019.jpeg" target="_blank"><img src="/images/hobbies/Friends%20and%20Society/IMG_9019.jpeg" loading="lazy"></a></div>
 </div>
 
+<-------SCROLL!------->
+
 ---
 
 ## Gym
@@ -42,6 +44,8 @@ I’ve been going to the gym since around 2022 to improve both my physical and m
   <div class="media-element"><a href="/images/hobbies/Gym/862F48A1-88F5-4EF9-8625-FE4C9F0C6B61.JPG" target="_blank"><img src="/images/hobbies/Gym/862F48A1-88F5-4EF9-8625-FE4C9F0C6B61.JPG" loading="lazy"></a></div>
   <div class="media-element"><a href="/images/hobbies/Gym/33F1DCC0-B8DC-459C-B85A-228CE717C775.JPG" target="_blank"><img src="/images/hobbies/Gym/33F1DCC0-B8DC-459C-B85A-228CE717C775.JPG" loading="lazy"></a></div>
 </div>
+
+<-------SCROLL!------->
 
 ---
 
@@ -59,6 +63,8 @@ Since then, I’ve explored more accessible forms of arts and crafts, such as po
   <div class="media-element"><img src="/images/hobbies/Arts%20and%20Crafts/IMG_1882.PNG" loading="lazy"><p class="title">Built model of rocket stool</p></div>
   <div class="media-element"><img src="/images/hobbies/Arts%20and%20Crafts/The%20watchtower.jpg" loading="lazy"><p class="title">The Watchtower</p></div>
 </div>
+
+<-------SCROLL!------->
 
 ---
 
@@ -78,6 +84,8 @@ I've gotten into this art since I left home for university. I struggled with it 
   <div class="media-element"><img src="/images/hobbies/Cooking%20and%20Baking/IMG_1432.jpeg" loading="lazy"><p class="title">Nutella & Cheese Bread Braids</p></div>
 </div>
 
+<-------SCROLL!------->
+
 ---
 
 ## Vinyl & Music
@@ -94,6 +102,8 @@ I’ve recently started collecting vinyl records as a more intentional way to en
   <div class="media-element"><img src="/images/hobbies/Vinyl/IMG_5023.jpeg" loading="lazy"><p class="title">LANY</p></div>
   <div class="media-element"><img src="/images/hobbies/Vinyl/IMG_5025.jpeg" loading="lazy"><p class="title">Ariana Grande – Brighter Days Ahead</p></div>
 </div>
+
+<-------SCROLL!------->
 
 ---
 
@@ -115,3 +125,5 @@ Since then, I’ve invested in both a film camera and a digital camera to contin
   <div class="media-element"><img src="/images/hobbies/Photography/IMG_0045.JPG" loading="lazy"></div>
   <div class="media-element"><img src="/images/hobbies/Photography/IMG_1201.jpeg" loading="lazy"></div>
 </div>
+
+<-------SCROLL!------->

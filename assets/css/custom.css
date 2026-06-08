@@ -54,3 +54,10 @@
   font-size: 0.85em;
   opacity: 0.75;
 }
+
+.experience-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 1.8rem 0;
+}
