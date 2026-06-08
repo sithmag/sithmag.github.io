@@ -4,10 +4,12 @@ permalink: /projects/index.html
 title: Projects
 body_class: projects-wide
 ---
-
-<br>  
-Below is a selection of projects across **electrochemical diagnostics**, **assistive technology**, **biomedical instrumentation**, **data science**, and **engineering consulting**. Each project includes a short summary, my contributions, and key deliverables.
-
+<br>
+<div class="projects-intro">
+  <p>
+    Below is a selection of projects across <strong>electrochemical diagnostics</strong>, <strong>assistive technology</strong>, <strong>biomedical instrumentation</strong>, <strong>data science</strong>, and <strong>engineering consulting</strong>. Each project includes a short summary, my contributions, and key deliverables.
+  </p>
+</div>
 
 <div style="text-align: center; max-width: 900px; margin: 2rem auto 3rem auto;">
   <p style="text-indent: 0; margin-bottom: 1rem;">

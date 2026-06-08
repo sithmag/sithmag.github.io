@@ -45,16 +45,10 @@ I’m always open to academic discussions, industry collaboration, and opportuni
 
 I am currently seeking an entry-level or graduate role where I can contribute to practical engineering, product development, testing, and technical problem-solving. If any of the areas below align with your team’s work, I’d welcome the opportunity to connect.
 
-* **Medical device development** — concept development, prototyping, testing, iteration, and documentation
-* **Biomedical instrumentation & sensors** — data acquisition, calibration, troubleshooting, sensor integration, and measurement reliability
-* **Hardware-focused engineering** — circuits, embedded systems, signal pathways, hardware debugging, and system-level thinking
-* **Assistive technology & rehabilitation engineering** — wheelchair systems, custom fittings, mobility equipment, user-centred design, and practical device modification
-* **Prototyping & manufacturing support** — CAD, 3D printing, fabrication, workshop tools, design-for-manufacture thinking, and hands-on build support
-* **Test engineering & verification support** — test plans, repeatability, validation protocols, performance checks, basic statistics, and structured reporting
-* **Automation & instrumentation systems** — sensors, data logging, basic control systems, Arduino/MCU prototyping, Raspberry Pi, and hardware-software integration
-* **Embedded systems prototyping** — Arduino, microcontroller basics, interfacing, signal capture, debugging, and simple GUI/data visualisation workflows
-* **Signal processing & data analysis** — Python, MATLAB, feature extraction, filtering, performance evaluation, and experimental data interpretation
-* **Electrochemical diagnostics & biosensing** — assay translation, electrochemical testing, differential pulse voltammetry, cyclic voltammetry, and diagnostic device concepts
-* **Quality, risk & compliance mindset** — WHS, design controls, traceable documentation, risk analysis, quality procedures, and controlled technical workflows
-* **Cross-functional collaboration** — working with engineers, clinicians, researchers, clients, supervisors, and non-technical stakeholders
-* **Technical communication** — design reports, progress updates, presentations, risk documentation, and clear engineering explanations
+* **Field service engineering & technical support** — equipment troubleshooting, fault diagnosis, calibration, maintenance support, customer-facing technical communication, and practical problem-solving
+* **Medical electronics, assembly & hardware systems** — electronic assembly, sensor integration, wiring, circuits, signal pathways, hardware testing, and device-level troubleshooting in medical or clinical contexts
+* **Assistive technology & rehabilitation engineering** — wheelchair systems, custom fittings, mobility equipment, user-centred design, practical device modification, and workshop-based problem solving
+* **R&D, prototyping & product development** — concept development, CAD, 3D printing, fabrication, design iteration, test builds, and translating ideas into functional prototypes
+* **Test engineering, verification & validation support** — test plans, repeatability checks, performance testing, validation protocols, troubleshooting, and structured technical reporting
+* **Technical documentation, quality & risk** — service records, test reports, risk analysis, WHS, traceable documentation, controlled workflows, and clear engineering communication
+

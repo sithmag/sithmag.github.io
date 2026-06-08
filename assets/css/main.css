@@ -660,6 +660,26 @@ body.projects-wide .media-instruction {
 }
 
 /* =========================================================
+Projects Intro
+========================================================= */
+
+body.projects-wide .projects-intro {
+max-width: 950px !important;
+margin: 1rem auto 3rem auto !important;
+text-align: center !important;
+}
+
+body.projects-wide .projects-intro h2 {
+margin-bottom: 1rem !important;
+}
+
+body.projects-wide .projects-intro p {
+text-indent: 0 !important;
+margin-bottom: 0 !important;
+font-size: 1.05rem !important;
+}
+
+/* =========================================================
    Clickable Image Card
    ========================================================= */
 
@@ -871,47 +891,731 @@ body.projects-wide .code-details pre {
   }
 }
 
-/* ---------- Centered Projects Jump Section ---------- */
+/* =========================================================
+Wide Clinical Exposure Page Override
+========================================================= */
 
-body.projects-wide .jump-section {
-  width: 100% !important;
-  max-width: 950px !important;
-  margin: 2rem auto 4rem auto !important;
-  text-align: center !important;
-  clear: both !important;
+body.clinical-wide .article-author-top {
+display: none !important;
+width: 0 !important;
+margin: 0 !important;
 }
 
-body.projects-wide .jump-title {
+body.clinical-wide #main {
+width: 100% !important;
+max-width: none !important;
+margin: 0 auto !important;
+}
+
+body.clinical-wide #main article {
+float: none !important;
+display: block !important;
+width: min(1400px, calc(100vw - 6rem)) !important;
+max-width: none !important;
+margin-left: auto !important;
+margin-right: auto !important;
+}
+
+body.clinical-wide .article-wrap {
+width: 100% !important;
+max-width: none !important;
+margin: 0 auto !important;
+}
+
+body.clinical-wide .article-wrap p {
+text-indent: 0 !important;
+}
+
+/* =========================================================
+Clinical Intro
+========================================================= */
+
+body.clinical-wide .clinical-intro {
+max-width: 950px !important;
+margin: 1rem auto 3rem auto !important;
+text-align: center !important;
+font-size: 1.05rem !important;
+}
+
+body.clinical-wide .clinical-intro p {
+text-indent: 0 !important;
+margin-bottom: 1rem !important;
+}
+
+/* =========================================================
+Clinical Exposure Cards
+========================================================= */
+
+body.clinical-wide .clinical-card {
+display: grid !important;
+grid-template-columns: minmax(0, 0.9fr) minmax(480px, 1.1fr) !important;
+gap: 3rem !important;
+align-items: start !important;
+width: 100% !important;
+margin: 4rem 0 !important;
+padding-bottom: 4rem !important;
+border-bottom: 1px solid #e5e5e5 !important;
+}
+
+body.clinical-wide .clinical-info {
+min-width: 0 !important;
+}
+
+body.clinical-wide .clinical-info h2 {
+margin-top: 0 !important;
+}
+
+body.clinical-wide .clinical-info h3,
+body.clinical-wide .clinical-media h3 {
+margin-bottom: 0.45rem !important;
+}
+
+body.clinical-wide .clinical-info p,
+body.clinical-wide .clinical-media p {
+text-indent: 0 !important;
+}
+
+body.clinical-wide .clinical-info ul {
+padding-left: 1.2rem !important;
+}
+
+body.clinical-wide .clinical-media {
+position: sticky !important;
+top: 1.5rem !important;
+min-width: 0 !important;
+}
+
+body.clinical-wide .clinical-instruction {
+margin: -0.25rem 0 1rem 0 !important;
+text-indent: 0 !important;
+font-size: 0.95rem !important;
+opacity: 0.75 !important;
+}
+
+body.clinical-wide .clinical-media iframe {
+width: 100% !important;
+height: 720px !important;
+border: 1px solid #ddd !important;
+border-radius: 10px !important;
+background: #f7f7f7 !important;
+margin-top: 0.6rem !important;
+}
+
+body.clinical-wide .clinical-button {
+display: inline-block !important;
+margin-top: 0.75rem !important;
+padding: 0.55rem 0.85rem !important;
+border: 1px solid #222 !important;
+border-radius: 6px !important;
+text-decoration: none !important;
+font-weight: 700 !important;
+background: #fff !important;
+transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+}
+
+body.clinical-wide .clinical-button:hover {
+background: #222 !important;
+color: #fff !important;
+transform: translateY(-1px) !important;
+}
+
+/* =========================================================
+Clinical Learnings Section
+========================================================= */
+
+body.clinical-wide .clinical-learnings {
+margin: 4rem 0 2rem 0 !important;
+}
+
+body.clinical-wide .clinical-learnings h2 {
+text-align: center !important;
+margin-bottom: 2rem !important;
+}
+
+body.clinical-wide .learning-grid {
+display: grid !important;
+grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+gap: 1.5rem !important;
+}
+
+body.clinical-wide .learning-card {
+border: 1px solid #d8d8d8 !important;
+border-radius: 12px !important;
+padding: 1.25rem !important;
+background: #fafafa !important;
+box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+}
+
+body.clinical-wide .learning-card h3 {
+margin-top: 0 !important;
+margin-bottom: 0.75rem !important;
+font-size: 1.25rem !important;
+}
+
+body.clinical-wide .learning-card p {
+text-indent: 0 !important;
+margin-bottom: 0 !important;
+}
+
+/* =========================================================
+Mobile Layout
+========================================================= */
+
+@media only screen and (max-width: 900px) {
+body.clinical-wide #main article {
+width: calc(100vw - 2rem) !important;
+}
+
+body.clinical-wide .clinical-card {
+grid-template-columns: 1fr !important;
+gap: 1.5rem !important;
+}
+
+body.clinical-wide .clinical-media {
+position: static !important;
+}
+
+body.clinical-wide .clinical-media iframe {
+height: 520px !important;
+}
+
+body.clinical-wide .learning-grid {
+grid-template-columns: 1fr !important;
+}
+}
+
+/* =========================================================
+Clinical Motivation Section
+========================================================= */
+
+body.clinical-wide .clinical-motivation {
+max-width: 1000px !important;
+margin: 3rem auto 4rem auto !important;
+padding: 2rem !important;
+border: 1px solid #d8d8d8 !important;
+border-radius: 14px !important;
+background: #fafafa !important;
+box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+}
+
+body.clinical-wide .clinical-motivation h2 {
+text-align: center !important;
+margin-top: 0 !important;
+margin-bottom: 1.25rem !important;
+}
+
+body.clinical-wide .clinical-motivation p {
+text-indent: 0 !important;
+margin-bottom: 1rem !important;
+}
+
+body.clinical-wide .clinical-motivation p:last-child {
+margin-bottom: 0 !important;
+}
+
+/* Optional: allow 4 learning cards to sit neatly */
+body.clinical-wide .learning-grid {
+grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+@media only screen and (max-width: 1100px) {
+body.clinical-wide .learning-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+}
+
+@media only screen and (max-width: 650px) {
+body.clinical-wide .learning-grid {
+grid-template-columns: 1fr !important;
+}
+}
+
+/* =========================================================
+Wide Hobbies Page Override
+========================================================= */
+
+body.hobbies-wide .article-author-top {
+display: none !important;
+width: 0 !important;
+margin: 0 !important;
+}
+
+body.hobbies-wide #main {
+width: 100% !important;
+max-width: none !important;
+margin: 0 auto !important;
+}
+
+body.hobbies-wide #main article {
+float: none !important;
+display: block !important;
+width: min(1500px, calc(100vw - 6rem)) !important;
+max-width: none !important;
+margin-left: auto !important;
+margin-right: auto !important;
+}
+
+body.hobbies-wide .article-wrap {
+width: 100% !important;
+max-width: none !important;
+margin: 0 auto !important;
+}
+
+body.hobbies-wide .article-wrap p {
+text-indent: 0 !important;
+}
+
+/* =========================================================
+Hobbies Intro
+========================================================= */
+
+body.hobbies-wide .hobbies-intro {
+max-width: 950px !important;
+margin: 1rem auto 3rem auto !important;
+text-align: center !important;
+}
+
+body.hobbies-wide .hobbies-intro h2 {
+margin-bottom: 1rem !important;
+}
+
+body.hobbies-wide .hobbies-intro p {
+text-indent: 0 !important;
+margin-bottom: 0 !important;
+font-size: 1.05rem !important;
+}
+
+/* =========================================================
+Hobby Cards
+========================================================= */
+
+body.hobbies-wide .hobby-card {
+display: grid !important;
+grid-template-columns: minmax(0, 0.8fr) minmax(520px, 1.2fr) !important;
+gap: 3rem !important;
+align-items: start !important;
+width: 100% !important;
+margin: 4rem 0 !important;
+padding-bottom: 4rem !important;
+border-bottom: 1px solid #e5e5e5 !important;
+}
+
+body.hobbies-wide .hobby-info {
+min-width: 0 !important;
+}
+
+body.hobbies-wide .hobby-info h2 {
+margin-top: 0 !important;
+}
+
+body.hobbies-wide .hobby-info p {
+text-indent: 0 !important;
+margin-bottom: 1rem !important;
+}
+
+body.hobbies-wide .hobby-media {
+min-width: 0 !important;
+position: sticky !important;
+top: 1.5rem !important;
+}
+
+body.hobbies-wide .hobby-media h3 {
+margin-bottom: 0.35rem !important;
+}
+
+body.hobbies-wide .scroll-hint {
+text-indent: 0 !important;
+margin: 0 0 0.75rem 0 !important;
+font-size: 0.95rem !important;
+opacity: 0.75 !important;
+}
+
+/* =========================================================
+Preserve and Improve Horizontal Scroll Galleries
+========================================================= */
+
+body.hobbies-wide .media-scroller {
+--_spacer: 12px;
+display: grid !important;
+gap: var(--_spacer) !important;
+grid-auto-flow: column !important;
+grid-auto-columns: 260px !important;
+padding: 0.5rem var(--_spacer) 1rem var(--_spacer) !important;
+margin: 0.5rem 0 0.5rem 0 !important;
+overflow-x: auto !important;
+overflow-y: hidden !important;
+-webkit-overflow-scrolling: touch !important;
+overscroll-behavior-inline: contain !important;
+scroll-snap-type: inline mandatory !important;
+scroll-padding-inline: var(--_spacer, 1rem) !important;
+scroll-behavior: smooth !important;
+border: 1px solid #e5e5e5 !important;
+border-radius: 14px !important;
+background: #fafafa !important;
+}
+
+body.hobbies-wide .media-element {
+display: grid !important;
+grid-template-rows: min-content auto !important;
+gap: 0.65rem !important;
+padding: 0.75rem !important;
+background: #f3f3f3 !important;
+border-radius: 12px !important;
+box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10) !important;
+scroll-snap-align: start !important;
+min-width: 0 !important;
+}
+
+body.hobbies-wide .media-element a {
+border-bottom: 0 !important;
+display: block !important;
+}
+
+body.hobbies-wide .media-element img {
+width: 100% !important;
+height: 220px !important;
+object-fit: cover !important;
+border-radius: 10px !important;
+display: block !important;
+transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+body.hobbies-wide .media-element:hover img {
+transform: translateY(-2px) !important;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14) !important;
+}
+
+body.hobbies-wide .media-element .title {
+margin: 0 !important;
+text-indent: 0 !important;
+font-size: 0.92rem !important;
+line-height: 1.25 !important;
+text-align: center !important;
+}
+
+/* Make scrollbar more obvious */
+body.hobbies-wide .media-scroller::-webkit-scrollbar {
+height: 10px !important;
+}
+
+body.hobbies-wide .media-scroller::-webkit-scrollbar-track {
+background: #e9e9e9 !important;
+border-radius: 999px !important;
+}
+
+body.hobbies-wide .media-scroller::-webkit-scrollbar-thumb {
+background: #999 !important;
+border-radius: 999px !important;
+}
+
+body.hobbies-wide .media-scroller::-webkit-scrollbar-thumb:hover {
+background: #555 !important;
+}
+
+/* =========================================================
+Mobile Layout
+========================================================= */
+
+@media only screen and (max-width: 900px) {
+body.hobbies-wide #main article {
+width: calc(100vw - 2rem) !important;
+}
+
+body.hobbies-wide .hobby-card {
+grid-template-columns: 1fr !important;
+gap: 1.5rem !important;
+}
+
+body.hobbies-wide .hobby-media {
+position: static !important;
+}
+
+body.hobbies-wide .media-scroller {
+grid-auto-columns: 240px !important;
+}
+
+body.hobbies-wide .media-element img {
+height: 200px !important;
+}
+}
+
+/* =========================================================
+   Wide Work Experience Page Override
+   ========================================================= */
+
+body.experience-wide .article-author-top {
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+}
+
+body.experience-wide #main {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+body.experience-wide #main article {
+  float: none !important;
+  display: block !important;
+  width: min(1400px, calc(100vw - 6rem)) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body.experience-wide .article-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+body.experience-wide .article-wrap p {
   text-indent: 0 !important;
-  margin: 0 0 1rem 0 !important;
-  text-align: center !important;
-  font-family: 'PT Sans Narrow', sans-serif !important;
-  font-size: 1.4rem !important;
 }
 
-body.projects-wide .jump-links {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 0.65rem !important;
+/* =========================================================
+   Work Experience Intro
+   ========================================================= */
+
+body.experience-wide .experience-intro {
+  max-width: 950px !important;
+  margin: 1rem auto 3rem auto !important;
+  text-align: center !important;
+}
+
+body.experience-wide .experience-intro h2 {
+  margin-bottom: 1rem !important;
+}
+
+body.experience-wide .experience-intro p {
+  text-indent: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 1.05rem !important;
+}
+
+/* =========================================================
+   Work Experience Cards
+   ========================================================= */
+
+body.experience-wide .work-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.45fr) !important;
+  gap: 3rem !important;
+  align-items: start !important;
   width: 100% !important;
+  margin: 4rem 0 !important;
+  padding-bottom: 4rem !important;
+  border-bottom: 1px solid #e5e5e5 !important;
 }
 
-body.projects-wide .jump-links a {
-  display: inline-block !important;
-  text-align: center !important;
-  padding: 0.45rem 0.75rem !important;
+body.experience-wide .work-info {
+  min-width: 0 !important;
+}
+
+body.experience-wide .work-info h2 {
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+body.experience-wide .work-info h3 {
+  margin-bottom: 0.45rem !important;
+}
+
+body.experience-wide .work-info p {
+  text-indent: 0 !important;
+}
+
+body.experience-wide .work-info ul {
+  padding-left: 1.2rem !important;
+}
+
+body.experience-wide .work-media {
+  position: sticky !important;
+  top: 1.5rem !important;
+  min-width: 0 !important;
   border: 1px solid #d8d8d8 !important;
-  border-radius: 999px !important;
+  border-radius: 14px !important;
   background: #fafafa !important;
-  text-decoration: none !important;
-  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease !important;
+  padding: 1.25rem !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+  text-align: center !important;
 }
 
-body.projects-wide .jump-links a:hover {
+body.experience-wide .work-logo {
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+  margin: 0 auto 1rem auto !important;
+  background: #fff !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08) !important;
+  box-sizing: border-box !important;
+}
+
+/* Logo-specific padding */
+body.experience-wide .logo-cpa {
+  padding: 30px !important;
+}
+
+body.experience-wide .logo-uc {
+  padding: 14px !important;
+}
+
+body.experience-wide .logo-jfc {
+  padding: 14px !important;
+}
+
+body.experience-wide .logo-aldi {
+  padding: 4px !important;
+}
+
+body.experience-wide .logo-officeworks {
+  padding: 14px !important;
+}
+
+body.experience-wide .logo-unilodge {
+  padding: 16px !important;
+}
+
+body.experience-wide .work-media-caption {
+  text-indent: 0 !important;
+  margin: 0.75rem 0 0 0 !important;
+  font-size: 0.95rem !important;
+  opacity: 0.85 !important;
+}
+
+/* =========================================================
+   Laboratory Image Card
+   ========================================================= */
+
+body.experience-wide .work-image-link {
+  position: relative !important;
+  display: block !important;
+  margin-top: 1rem !important;
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background: #f7f7f7 !important;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease !important;
+}
+
+body.experience-wide .work-image-link:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14) !important;
+  border-color: #222 !important;
+}
+
+body.experience-wide .work-image {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 360px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+body.experience-wide .work-image-link span {
+  display: block !important;
+  padding: 0.55rem 0.75rem !important;
   background: #222 !important;
   color: #fff !important;
-  border-color: #222 !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+/* =========================================================
+   Clinical Link Card
+   ========================================================= */
+
+body.experience-wide .clinical-link-card {
+  max-width: 950px !important;
+  margin: 4rem auto 2rem auto !important;
+  padding: 2rem !important;
+  text-align: center !important;
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 14px !important;
+  background: #fafafa !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06) !important;
+}
+
+body.experience-wide .clinical-link-card h2 {
+  margin-top: 0 !important;
+}
+
+body.experience-wide .clinical-link-card p {
+  text-indent: 0 !important;
+}
+
+body.experience-wide .work-button {
+  display: inline-block !important;
+  margin-top: 0.75rem !important;
+  padding: 0.6rem 0.95rem !important;
+  border: 1px solid #222 !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  background: #fff !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+}
+
+body.experience-wide .work-button:hover {
+  background: #222 !important;
+  color: #fff !important;
   transform: translateY(-1px) !important;
+}
+
+/* =========================================================
+   Mobile Layout
+   ========================================================= */
+
+@media only screen and (max-width: 900px) {
+  body.experience-wide #main article {
+    width: calc(100vw - 2rem) !important;
+  }
+
+  body.experience-wide .work-card {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  body.experience-wide .work-media {
+    position: static !important;
+  }
+
+  body.experience-wide .work-logo {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}
+
+/* =========================================================
+   Header Profile Icon
+   ========================================================= */
+
+.site-name-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+
+.header-profile-icon {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15) !important;
+}
+
+.site-name-link span {
+  display: inline-block !important;
 }
