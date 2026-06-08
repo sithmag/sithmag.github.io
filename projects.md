@@ -518,4 +518,4 @@ def interpretData():
 
 ## Want to connect?
 
-I’m actively seeking an entry-level / graduate opportunity, including roles I can start **before graduation**, to get a head start in my career. If my projects align with your team’s work, feel free to reach out.
+I’m actively seeking an entry-level / graduate opportunity. If my projects align with your team’s work, feel free to reach out.

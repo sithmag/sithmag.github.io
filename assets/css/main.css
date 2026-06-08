@@ -871,39 +871,47 @@ body.projects-wide .code-details pre {
   }
 }
 
-/* ---------- Centered Projects Jump List ---------- */
+/* ---------- Centered Projects Jump Section ---------- */
 
 body.projects-wide .jump-section {
+  width: 100% !important;
+  max-width: 950px !important;
+  margin: 2rem auto 4rem auto !important;
   text-align: center !important;
-  max-width: 900px !important;
-  margin: 2rem auto 3rem auto !important;
+  clear: both !important;
 }
 
-body.projects-wide .jump-section strong {
-  display: block !important;
-  margin-bottom: 1rem !important;
+body.projects-wide .jump-title {
+  text-indent: 0 !important;
+  margin: 0 0 1rem 0 !important;
+  text-align: center !important;
   font-family: 'PT Sans Narrow', sans-serif !important;
-  font-size: 1.35rem !important;
+  font-size: 1.4rem !important;
 }
 
-body.projects-wide .jump-list {
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin: 0 auto !important;
+body.projects-wide .jump-links {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.65rem !important;
+  width: 100% !important;
 }
 
-body.projects-wide .jump-list li {
-  list-style-type: none !important;
-  margin: 0.65rem 0 !important;
-}
-
-body.projects-wide .jump-list a {
+body.projects-wide .jump-links a {
   display: inline-block !important;
-  padding: 0.35rem 0.6rem !important;
-  border-bottom: 1px dotted #b3b3b1 !important;
+  text-align: center !important;
+  padding: 0.45rem 0.75rem !important;
+  border: 1px solid #d8d8d8 !important;
+  border-radius: 999px !important;
+  background: #fafafa !important;
   text-decoration: none !important;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease !important;
 }
 
-body.projects-wide .jump-list a:hover {
-  border-bottom: 1px solid #333 !important;
+body.projects-wide .jump-links a:hover {
+  background: #222 !important;
+  color: #fff !important;
+  border-color: #222 !important;
+  transform: translateY(-1px) !important;
 }
