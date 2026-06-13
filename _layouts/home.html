@@ -58,6 +58,37 @@
 </div><!-- /.footer-wrap -->
 
 {% include scripts.html %}
-  
+
+<!-- Portfolio visitor Telegram notifier -->
+<script>
+(function () {
+  try {
+    if (sessionStorage.getItem("portfolioVisitPinged")) return;
+    sessionStorage.setItem("portfolioVisitPinged", "1");
+
+    const payload = {
+      key: "saveenda",
+      page: window.location.pathname + window.location.search,
+      title: document.title,
+      referrer: document.referrer || "",
+      device: /Mobi|Android/i.test(navigator.userAgent) ? "mobile" : "desktop",
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
+      language: navigator.language || ""
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbyo7r2Fhl-7eixqMNPoCIkdyFjOJM-097I34NFqymBJrDtnqvxgcrnnuwwnJ8nB1C_6OQ/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain"
+      },
+      body: JSON.stringify(payload),
+      keepalive: true
+    });
+  } catch (error) {
+    // Silently fail so the portfolio never breaks.
+  }
+})();
+</script>
 </body>
 </html>
