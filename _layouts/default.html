@@ -5,29 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 
 <head>
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-<link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-<link rel="apple-touch-icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ '/favicon.ico' | relative_url }}">
 
+  <script src="https://cdn.counter.dev/script.js" data-id="4c8f7caa-2b55-46cd-a995-2c4633303773" data-utcoffset="8"></script>
 
-<script src="https://cdn.counter.dev/script.js" data-id="4c8f7caa-2b55-46cd-a995-2c4633303773" data-utcoffset="8"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5N5JY1E21"></script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5N5JY1E21"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T5N5JY1E21');
-</script>
-
+    gtag('config', 'G-T5N5JY1E21');
+  </script>
 </head>
-
-
 
 <body class="page" itemscope itemtype="http://schema.org/WebPage">
 
@@ -35,19 +31,20 @@
 
 {% include navigation.html %}
 
-
 {% if page.image.feature %}<div class="image-wrap">
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
 </div><!-- /.image-wrap -->{% endif %}
 
-<div id="main" role="main"  itemprop="mainContentOfPage">
+<div id="main" role="main" itemprop="mainContentOfPage">
   <div class="article-author-top">
     {% include author-bio.html %}
   </div>
+
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <div class="headline-wrap">
       <h1 itemprop="headline">{{ page.title }}</h1>
     </div><!--/ .headline-wrap -->
+
     <div class="article-wrap" itemprop="text">
       {{ content }}
     </div><!-- /.article-wrap -->
@@ -61,6 +58,38 @@
 </div><!-- /.footer-wrap -->
 
 {% include scripts.html %}
+
+<!-- Portfolio visitor Telegram notifier -->
+<script>
+(function () {
+  try {
+    if (sessionStorage.getItem("portfolioVisitPinged")) return;
+    sessionStorage.setItem("portfolioVisitPinged", "1");
+
+    const payload = {
+      key: "saveenda",
+      page: window.location.pathname + window.location.search,
+      title: document.title,
+      referrer: document.referrer || "",
+      device: /Mobi|Android/i.test(navigator.userAgent) ? "mobile" : "desktop",
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
+      language: navigator.language || ""
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbyo7r2Fhl-7eixqMNPoCIkdyFjOJM-097I34NFqymBJrDtnqvxgcrnnuwwnJ8nB1C_6OQ/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain"
+      },
+      body: JSON.stringify(payload),
+      keepalive: true
+    });
+  } catch (error) {
+    // Silently fail so the portfolio never breaks.
+  }
+})();
+</script>
 
 </body>
 </html>
