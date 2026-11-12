@@ -57,7 +57,8 @@
 
 /* Mobile layout: keep desktop presentation and content unchanged. */
 .about-mobile-only,
-details.mobile-site-menu {
+details.mobile-site-menu,
+.mobile-nav-shortcuts {
   display: none;
 }
 
@@ -75,6 +76,7 @@ details.mobile-site-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 12px;
     width: calc(100% - 40px);
     padding: 24px 0;
@@ -84,6 +86,7 @@ details.mobile-site-menu {
   .navigation-wrapper .site-name {
     float: none;
     width: auto;
+    flex: 1 1 0;
     min-width: 0;
     margin: 0;
     font-size: 18px;
@@ -106,12 +109,57 @@ details.mobile-site-menu {
 
   .mobile-site-menu summary {
     box-sizing: border-box;
-    min-height: 44px;
-    padding: 8px 14px;
-    border: 1px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 48px;
+    padding: 10px 16px;
+    background: #222;
+    color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+    border: 1px solid #222;
     border-radius: 8px;
     cursor: pointer;
     list-style: none;
+  }
+
+  .mobile-site-menu summary:focus-visible {
+    outline-color: #222;
+  }
+
+  .mobile-site-menu[open] summary {
+    background: #444;
+  }
+
+  .mobile-nav-shortcuts {
+    display: flex;
+    flex: 0 0 100%;
+    gap: 8px;
+    text-transform: none;
+  }
+
+  .mobile-nav-shortcuts a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 44px;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .mobile-nav-shortcuts a:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: 2px;
   }
 
   .mobile-site-menu summary::-webkit-details-marker {
@@ -120,7 +168,7 @@ details.mobile-site-menu {
 
   .mobile-site-menu summary:focus-visible,
   .mobile-site-menu a:focus-visible {
-    outline: 2px solid currentColor;
+    outline: 2px solid #222;
     outline-offset: 3px;
   }
 

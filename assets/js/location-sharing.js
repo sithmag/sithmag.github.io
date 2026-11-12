@@ -6,14 +6,20 @@
   if (!endpoint || !/^https:\/\//i.test(endpoint) ||
       !window.isSecureContext || !navigator.geolocation) return;
 
-  // Avoid asking again as visitors navigate between pages in the same tab.
-  var sessionKey = 'portfolio-location-requested';
-  try {
-    if (sessionStorage.getItem(sessionKey)) return;
-    sessionStorage.setItem(sessionKey, '1');
-  } catch (_) {
-    // Browser permission still governs access when storage is unavailable.
+  // Respect denials and successful delivery; allow at most one later retry
+  // after transient positioning/network errors, without repeatedly prompting.
+  var sessionKey = 'portfolio-location-state-v2';
+  var state = { attempts: 0 };
+  function saveState() {
+    try { sessionStorage.setItem(sessionKey, JSON.stringify(state)); } catch (_) {}
   }
+  try {
+    state = JSON.parse(sessionStorage.getItem(sessionKey) || 'null') || state;
+  } catch (_) {}
+  if (state.done || state.denied || state.attempts >= 2 || Date.now() < (state.retryAfter || 0)) return;
+  state.attempts = (state.attempts || 0) + 1;
+  state.retryAfter = Date.now() + 60000;
+  saveState();
 
   navigator.geolocation.getCurrentPosition(async function (position) {
     var coords = position.coords;
@@ -25,15 +31,23 @@
       accuracy_metres: Math.max(1500, Math.ceil(coords.accuracy / 100) * 100)
     };
     try {
-      await fetch(endpoint, {
+      var response = await fetch(endpoint, {
         method: 'POST', headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
         credentials: 'omit', referrerPolicy: 'no-referrer',
         body: JSON.stringify({ type: 'voluntary_area', consent: true, area: area })
       });
+      if (response.ok && (await response.json()).ok === true) {
+        state.done = true;
+        saveState();
+      }
     } catch (_) {
       // Notification failures never interrupt browsing or trigger more prompts.
     }
-  }, function () {
-    // Denial, dismissal, and unavailable location send nothing.
+  }, function (error) {
+    // Never retry a denial or dismissal within this tab session.
+    if (error && error.code === 1) {
+      state.denied = true;
+      saveState();
+    }
   }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 0 });
 }());
