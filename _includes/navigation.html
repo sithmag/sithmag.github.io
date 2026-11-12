@@ -6,9 +6,9 @@
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
-		        {% for link in site.links %}
+{% for link in site.links %}
             <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url %}class="top-navigation-current"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
+{% endfor %}
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
@@ -16,9 +16,9 @@
     <summary><svg class="menu-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Menu</span></summary>
     <nav aria-label="Mobile site navigation">
       <ul>
-        {% for link in site.links %}
+{% for link in site.links %}
         <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url or page.url == '/' and link.url == '/aboutme/' %}aria-current="page"{% endif %}>{{ link.title }}</a></li>
-        {% endfor %}
+{% endfor %}
       </ul>
     </nav>
   </details>
@@ -26,6 +26,10 @@
     <a href="{{ '/projects/' | relative_url }}">Explore projects <span aria-hidden="true">→</span></a>
     <a href="{{ '/work-experience/' | relative_url }}">Work experience <span aria-hidden="true">→</span></a>
   </nav>
+  <nav class="mobile-social-links" aria-label="Social and contact links">
+    {% if site.owner.email %}<a href="mailto:{{ site.owner.email }}">Email</a>{% endif %}
+    {% if site.owner.linkedin %}<a href="https://linkedin.com/in/{{ site.owner.linkedin }}">LinkedIn</a>{% endif %}
+    {% if site.owner.github %}<a href="https://github.com/{{ site.owner.github }}">GitHub</a>{% endif %}
+    {% if site.owner.facebook %}<a href="https://facebook.com/{{ site.owner.facebook }}">Facebook</a>{% endif %}
+  </nav>
 </div><!-- /.navigation-wrapper -->
-
-<!-- Lastly modified by Hanlin CAI in 2023/05/01 -->

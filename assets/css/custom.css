@@ -58,7 +58,8 @@
 /* Mobile layout: keep desktop presentation and content unchanged. */
 .about-mobile-only,
 details.mobile-site-menu,
-.mobile-nav-shortcuts {
+.mobile-nav-shortcuts,
+.mobile-social-links {
   display: none;
 }
 
@@ -271,5 +272,36 @@ details.mobile-site-menu,
     display: block;
     width: calc(100% - 40px);
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-social-links {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 4px;
+    text-transform: none;
+  }
+
+  .mobile-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-height: 44px;
+    padding: 0 4px;
+    color: #333332;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .mobile-social-links a:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 }

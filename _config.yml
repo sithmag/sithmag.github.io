@@ -16,7 +16,6 @@ owner:
   avatar: sithmagunawardena.jpg
   #bio: Dream big, stay positive, work hard, and enjoy the journey.
   email: sithma100@gmail.com
-  # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   github: sithmag
@@ -89,8 +88,6 @@ kramdown:
 # --------------------------------------------------
 #  DISQUS COMMENT SYSTEM
 # --------------------------------------------------
-disqus:
-  shortname: lancecai
 
 
 # include: [".htaccess"]
