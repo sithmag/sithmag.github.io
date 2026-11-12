@@ -1,48 +1,21 @@
 ---
 layout: page
-permalink: /aboutme/index.html
 title: About Me
+permalink: /aboutme/index.html
 ---
 
-<style>
-  img.about-mobile-portrait {
-    display: none;
-  }
-
-  @media (max-width: 767px) {
-    img.about-mobile-portrait {
-      display: block;
-      width: 96px;
-      height: 96px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 0 auto 1rem;
-    }
-
-    img.floatpic {
-      float: none;
-      display: block;
-      width: 100%;
-      max-width: 220px;
-      height: auto;
-      margin: 0 auto 1rem;
-    }
-
-    img.floatpic + br {
-      display: none;
-    }
-  }
-</style>
-
-<img class="about-mobile-portrait"
-     src="{{ '/images/' | append: site.owner.avatar | relative_url }}"
-     alt="Portrait of Sithma Gunawardena">
-     
 # About Me
 
-<img src="/images/sithmafloat.jpg" class="floatpic">
+<img src="/images/sithmafloat.jpg"
+     class="floatpic about-desktop-graduation"
+     alt="Sithma Gunawardena at graduation holding flowers">
 <br />
-Hi I'm **Sithma Gunawardena!** <br>
+<span class="about-greeting">
+  <img class="about-mobile-only about-portrait"
+       src="{{ '/images/' | append: site.owner.avatar | relative_url }}"
+       alt="">
+  <span>Hi, I’m <strong>Sithma Gunawardena!</strong></span>
+</span><br>
 
 <br />
 I’m a Biomedical Engineering (Honours) graduate from the University of Sydney, specialising in nanoscale biotechnology. I currently work as a Loan Kit Technician at LifeHealthcare, where I support the inspection, preparation and traceability of surgical instruments and implant systems. I’m interested in engineering roles that combine hands-on technical work with problem-solving, particularly medical device servicing, troubleshooting, prototype development, and verification and validation.
