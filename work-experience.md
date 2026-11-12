@@ -4,9 +4,35 @@ permalink: /work-experience/index.html
 title: Work Experience
 ---
 
-A snapshot of my professional experience across **engineering consulting**, **operations**, **customer-facing technology**, and **student leadership**. For technical deep-dives, see my [Projects](/projects/) page.
+A snapshot of my professional experience across **medical devices and surgical instrumentation**, **engineering consulting**, **operations**, **customer-facing technology**, and **student leadership**. For technical deep-dives, see my [Projects](/projects/) page.
 
 ---
+
+## LifeHealthcare
+### Loan Kit Technician  
+**Macquarie Park, NSW** · **[July, 2026] – Present**
+
+Support the preparation, inspection, and traceability of surgical instruments and implant loan kits, with hands-on involvement in equipment checks and the integration of **CAB Medical** inventory and devices.
+<br />
+<br />
+**Highlights**
+- Inspect returned surgical instruments against equipment checklists and kit passports, identifying missing, damaged, expired, or incorrectly allocated items  
+- Check torque instruments against specified requirements in **N·m**, flagging deviations for further review  
+- Assisted with servicing a **powered surgical device system used for bunion correction** through the CAB Medical integration  
+- Support CAB Medical integration activities, including medical instrument and implant counts, inventory reconciliation, and equipment-label corrections  
+- Coordinate kit replenishment, repair, and replacement needs to maintain completeness and availability for scheduled procedures  
+- Use **SAP/MyM**, reservation monitors, stock-transfer orders, and **Zebra scanning systems** to maintain accurate inventory records and product traceability  
+- Process receipt, cleaning, reservation, dispatch, callback, and return workflows across orthopaedic, spinal, cervical, reconstructive surgery, and Motiva implant loan inventory  
+
+<!-- Replace the image paths and descriptions below with your two photos. -->
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0;">
+  <img src="/images/lifehealthcare-1.jpg"
+       alt="LifeHealthcare work experience — photo 1"
+       style="flex: 1 1 250px; width: 100%; min-width: 0; max-width: 100%; object-fit: contain;">
+  <img src="/images/lifehealthcare-2.jpg"
+       alt="LifeHealthcare work experience — photo 2"
+       style="flex: 1 1 250px; width: 100%; min-width: 0; max-width: 100%; object-fit: contain;">
+</div>
 
 ## Jacaranda Flame Consulting (University of Sydney)
 ### Internship Consultant — Client: Cerebral Palsy Alliance (CPA)  
@@ -61,3 +87,13 @@ Worked in a consulting-style engineering team delivering client outcomes for the
 - Assisted with admin tasks for the Residential Assistant team and ongoing reporting  
 - Provided mentoring and guidance to residents for university adjustment and success  
 - Demonstrated leadership, accountability, and calm decision-making under pressure  
+
+---
+
+## Hospital & Clinical Exposure
+
+A formative part of why I chose biomedical engineering came from early hospital exposure in both **Sri Lanka** and **Australia**, including supervised observational placements in oncology and broader hospital workflows.
+<br><br>
+→ **Full details + certificates:** [Clinical & Hospital Exposure](/clinical-exposure/)
+
+---

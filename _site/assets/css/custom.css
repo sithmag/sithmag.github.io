@@ -1,0 +1,56 @@
+/* ---------- Hobbies: Horizontal Media Scroller ---------- */
+
+.page__content .media-scroller {
+  display: grid;
+  gap: 12px;
+  grid-auto-flow: column;
+
+  /* Each card width (controls how much overflow you get) */
+  grid-auto-columns: 260px;
+
+  padding: 10px 4px 14px;
+  margin: 0.75rem 0 0.25rem;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 12px;
+}
+
+.page__content .media-scroller > * {
+  scroll-snap-align: start;
+}
+
+.page__content .media-element {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(0,0,0,0.02);
+}
+
+.page__content .media-element img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.page__content .media-element .title {
+  margin: 0;
+  text-indent: 0;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.page__content .gallery-caption {
+  margin-top: 0;
+  text-indent: 0;
+  font-size: 0.85em;
+  opacity: 0.75;
+}
