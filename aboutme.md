@@ -4,6 +4,40 @@ permalink: /aboutme/index.html
 title: About Me
 ---
 
+<style>
+  img.about-mobile-portrait {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    img.about-mobile-portrait {
+      display: block;
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+    }
+
+    img.floatpic {
+      float: none;
+      display: block;
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      margin: 0 auto 1rem;
+    }
+
+    img.floatpic + br {
+      display: none;
+    }
+  }
+</style>
+
+<img class="about-mobile-portrait"
+     src="{{ '/images/' | append: site.owner.avatar | relative_url }}"
+     alt="Portrait of Sithma Gunawardena">
+     
 # About Me
 
 <img src="/images/sithmafloat.jpg" class="floatpic">
