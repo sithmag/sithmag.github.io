@@ -10,7 +10,7 @@ A snapshot of my professional experience across **medical devices and surgical i
 
 ## LifeHealthcare
 ### Loan Kit Technician  
-**Macquarie Park, NSW** · **[July, 2026] – Present**
+**Macquarie Park, NSW** · **July, 2026 – Present**
 
 Support the preparation, inspection, and traceability of surgical instruments and implant loan kits, with hands-on involvement in equipment checks and the integration of **CAB Medical** inventory and devices.
 <br />
