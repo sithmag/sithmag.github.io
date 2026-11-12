@@ -14,3 +14,8 @@
 
 <!-- https://analytics.google.com/analytics/ -->
 <!-- Lastly modified by Hanlin CAI in 2023/01/15 -->
+
+{% if site.location_sharing_endpoint and site.location_sharing_endpoint != '' %}
+<script src="/assets/js/visit-notification.js?v={{ site.time | date: '%s' }}"
+        data-visit-endpoint="{{ site.location_sharing_endpoint | escape }}" defer></script>
+{% endif %}
