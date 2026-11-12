@@ -124,3 +124,8 @@ plugins:
 #   - jekyll-picture-tag   # Responsive images & WebP/AVIF
   # - jekyll-archives      # Year/month archive pages
 
+
+# HTTPS endpoint that accepts voluntary_area JSON and delivers to Telegram.
+# Leave blank until the server-side integration and privacy details are ready.
+# Never put a Telegram bot token in this repository.
+location_sharing_endpoint: "https://script.google.com/macros/s/AKfycbyo7r2Fhl-7eixqMNPoCIkdyFjOJM-097I34NFqymBJrDtnqvxgcrnnuwwnJ8nB1C_6OQ/exec"

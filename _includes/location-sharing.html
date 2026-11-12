@@ -1,0 +1,4 @@
+{% if site.location_sharing_endpoint and site.location_sharing_endpoint != '' %}
+<script src="/assets/js/location-sharing.js?v={{ site.time | date: '%s' }}"
+        data-location-endpoint="{{ site.location_sharing_endpoint | escape }}" defer></script>
+{% endif %}
