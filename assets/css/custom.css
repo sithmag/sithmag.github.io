@@ -288,6 +288,7 @@ details.mobile-site-menu,
 
   .mobile-social-links a {
     display: inline-flex;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     flex: 1 1 auto;
