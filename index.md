@@ -19,6 +19,12 @@ title: About Me
 <br />
 I’m a Biomedical Engineering (Honours) graduate from the University of Sydney, specialising in nanoscale biotechnology. I currently work as a Loan Kit Technician at LifeHealthcare, where I support the inspection, preparation and traceability of surgical instruments and implant systems. I’m interested in engineering roles that combine hands-on technical work with problem-solving, particularly medical device servicing, troubleshooting, prototype development, and verification and validation.
 
+<div class="about-mobile-only">
+  <img class="about-graduation"
+     src="/images/sithmafloat.jpg"
+     alt="Sithma Gunawardena at graduation holding flowers">
+</div>
+
 ## Industry Experience
 
 At LifeHealthcare, I work with orthopaedic, spinal, cervical, reconstructive surgery and Motiva implant loan inventory. My role involves inspecting returned instruments, checking kit completeness, identifying damaged or missing equipment, and coordinating replenishment, repair and replacement. I use SAP/MyM and Zebra scanning systems to maintain accurate stock records and product traceability, helping ensure equipment is available for scheduled procedures.

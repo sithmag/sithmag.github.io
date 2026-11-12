@@ -12,6 +12,16 @@
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
+  <details class="mobile-site-menu">
+    <summary>Menu</summary>
+    <nav aria-label="Mobile site navigation">
+      <ul>
+        {% for link in site.links %}
+        <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url or page.url == '/' and link.url == '/aboutme/' %}aria-current="page"{% endif %}>{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </details>
 </div><!-- /.navigation-wrapper -->
 
 <!-- Lastly modified by Hanlin CAI in 2023/05/01 -->
